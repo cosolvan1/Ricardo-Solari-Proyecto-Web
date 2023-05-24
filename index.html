@@ -17,48 +17,68 @@
 
 <!---HEADER-->
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<body>
+
+    <head>
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> <img src="images/r-logo.png" alt="" width="100px"> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">¡Bienvenido!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">ADN</a></li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Portafolio</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Proyecto 1</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item" href="#">Proyecto 2</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Proyecto 3</a></li>
+                            </ul>
+                        </li>
+                            <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Blog</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </head>
+
 
     <!---INICIO DE WEB -->
 
     <section class="home">
         <div class="home-content">
             <h1> Bienvenido a un mundo de posibilidades</h1>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nam omnis temporibus natus .</h3>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nam omnis temporibus natusLorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nam omnis temporibus natus .</h3>
             <div class="btn-box">
                 <a href="#">Ver Más</a>
                 <a href="#">Contacto</a>
             </div>
         </div>
 
-        <div id="carouselExampleIndicators" class="carousel slide w-75">
+        <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -72,27 +92,29 @@
                 </div>
 
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
             </button>
-          </div>
+        </div>
 
     </section>
 
-        <!---3 TRABAJOS -->
+    <!---3 TRABAJOS -->
     <section class="cards">
         <div class="card_body">
-            <img src="images/2023-05-01_21h31_21.png" alt="">
+            <img src="images/2023-05-01_21h32_23.png" alt="">
             <h2>Packaging</h2>
         </div>
 
         <div class="card_body">
-            <img src="images/2023-05-01_21h31_46.png" alt="">
+            <img src="images/2023-05-01_21h32_23.png" alt="">
             <h2>Branding</h2>
         </div>
 
@@ -108,7 +130,7 @@
             <img src="images/2023-05-01_21h31_46.png" alt="">
         </div>
 
-    <!---ASTRONAUTA -->
+        <!---ASTRONAUTA -->
 
         <div class="caja c4">
             <img src="images/AdobeStock_99633869.jpeg" alt="">
@@ -124,7 +146,9 @@
             </div>
         </div>
     </section>
-
+    <iframe src="https://www.youtube.com/embed/3VD6bbfxzME" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
 
 
 
