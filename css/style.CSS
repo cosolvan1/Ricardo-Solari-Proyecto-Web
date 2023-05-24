@@ -1,13 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Oswald:wght@700&family=Roboto:ital,wght@0,300;0,400;1,100;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Oswald:wght@700&family=Roboto:ital,wght@0,400;1,100;1,400;1,700&display=swap');
 
-:root{
-    --background-first: #F4EAD5;
-    --background-second: #FFFBE9;
-    --first-color: #CCD6A6;
-    --second-color: #DAE2B6;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -51,7 +44,6 @@ body {
 
 
 .home {
-    height: 100vh;
     display: flex;
     align-items: center;
     padding: 0% 5%;
@@ -60,7 +52,7 @@ body {
 
 .home-content {
     max-width: 600px;
-    margin: auto;    
+    height: auto; 
 
 }
 
@@ -147,13 +139,17 @@ body {
     width: 100%;
 }
 
-
+.carousel {
+    margin-top: 20px;
+}
 
 /* 2DA PARTE: 3 CAJAS*/
 
 .cards {
     background-color: #6fff8d;
     text-align: center;
+    margin-top: 20px;
+
 }
 
 .card_body img {
@@ -192,38 +188,6 @@ body {
     box-shadow: 5px 5px 15px 0px #4a4a4a;
 }
 
-.slider {
-    width: 75vw;
-    height: auto;
-    margin: auto;
-    overflow: hidden;
-}
-
-.slider .slide-track {
-    display: flex;
-    animation: scroll 40s linear infinite;
-    -webkit-animation: scroll 40s linear infinite;
-    width: calc(200px * 14);
-}
-
-.slider .slide {
-    width: 200px;
-}
-
-.slider .slide img {
-    width: 100%;
-}
-
-@keyframes scroll {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-    100% {
-        -webkit-transform: translateX(calc(-200px * 7));
-        transform: translateX(calc(-200px * 7));
-    }
-}
 
 /* 3RA PARTE: EMPIEZA CON UNA IDEA*/
 .cajas {
@@ -666,7 +630,8 @@ body {
     bottom: 40px;
     width: 170px;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    margin: auto;
 }
 
 .social-links a {
@@ -704,6 +669,12 @@ body {
 }
 
 @media(max-width:991px){
+
+    .home{
+        flex-direction: column;
+    }
+
+    
     .footer-columna{
         text-align: center; 
     }
